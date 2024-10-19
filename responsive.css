@@ -32,6 +32,7 @@
     .card-detail {
         font-size: 18px;
         text-align: center; /* Đảm bảo căn giữa văn bản trên màn hình nhỏ hơn */
+        justify-content: center;
     }
 
     .card-detail h1 {
