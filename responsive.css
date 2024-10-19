@@ -1,25 +1,25 @@
 /* Responsive for screens smaller than 1024px */
 @media (max-width: 1024px) {
     .card {
-        width: 80%; /* Adjust card width */
-        max-width: none; /* Remove fixed max-width */
-        height: auto; /* Allow card to adjust its height */
+        width: 80%;
+        max-width: none;
+        height: auto;
     }
     
     .card-detail {
-        width: 100%; /* Stack detail section */
+        width: 100%;
         float: none;
-        padding: 20px; /* Adjust padding for smaller screens */
-        text-align: center; /* Center text on smaller screens */
+        padding: 20px;
+        text-align: center; /* Thêm thuộc tính này để căn giữa văn bản */
     }
 
     .card-image {
-        width: 100%; /* Stack image section */
+        width: 100%;
         float: none;
     }
 
     .card-image img {
-        width: 100%; /* Make sure the image scales */
+        width: 100%;
     }
 }
 
@@ -30,33 +30,39 @@
     }
 
     .card-detail {
-        font-size: 18px; /* Slightly smaller text */
+        font-size: 18px;
+        text-align: center; /* Đảm bảo căn giữa văn bản trên màn hình nhỏ hơn */
     }
 
     .card-detail h1 {
-        font-size: 26px; /* Resize header for better fit */
+        font-size: 26px;
+    }
+
+    .card-detail p {
+        text-align: center; /* Đảm bảo 2 dòng dưới được căn giữa */
     }
 
     .card-image img {
-        transform: none; /* Disable hover zoom for small screens */
+        transform: none;
     }
 
     .card-info {
-        font-size: 100%; /* Adjust card-info text size */
+        font-size: 100%;
     }
 }
 
 /* Responsive for screens smaller than 480px (Mobile devices) */
 @media (max-width: 480px) {
     .card {
-        width: 95%; /* Make the card fill more of the screen */
+        width: 95%;
     }
 
     .card-detail p {
-        font-size: 16px; /* Make text more readable on mobile */
+        font-size: 16px;
+        text-align: center; /* Căn giữa văn bản trên các thiết bị di động */
     }
 
     .card-info {
-        font-size: 90%; /* Further reduce text size */
+        font-size: 90%;
     }
 }
